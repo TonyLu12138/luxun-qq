@@ -1,0 +1,57 @@
+# ===========================================================================
+#  .gitignore
+#
+#  注意：git 的 .gitignore **不支持行尾注释**！
+#  `_downloads/   # 说明` 会把整行（含 # 和说明）当成匹配模式，等于没写。
+#  所以下面的说明一律单独成行。
+# ===========================================================================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+
+# ---- 本机配置与密钥：绝不提交 ----
+# config.yaml 是打码过的模板，可以提交；
+# 真实账号 / 路径放在 config.local.yaml，由 Config.load 叠加覆盖。
+config.local.yaml
+config.local.json
+config.json
+*.key
+key.txt
+.env
+
+# ---- 大体积本地环境：可重新下载，不入库 ----
+# GitHub 单文件上限 100MB，这些动辄几百 MB 到几 GB。
+# 用 `python tools/setup.py --all` 重建。
+_downloads/
+_models/
+_runtime/
+models/
+
+# ---- 数据产物：含聊天内容与发送记录，属敏感数据 ----
+data/outbox/
+data/corpus/
+data/raw/
+data/my_style_sample.txt
+# 真实白名单（含真实号）；示例见 data/whitelist.example.txt
+data/whitelist.txt
+*.db
+*.db-wal
+*.db-shm
+*.db.broken-*
+
+# ---- 测试临时目录 ----
+tests/_tmp_run/
+tests/_tmp/
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

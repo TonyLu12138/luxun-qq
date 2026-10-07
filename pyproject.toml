@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luxun-qq"
+version = "0.2.0"
+description = "QQ 自动回复助手：三步思考 + 鲁迅式锐评 + 三候选选择后发送"
+requires-python = ">=3.10"
+dependencies = [
+    # 解密 QQ 本地数据库（可选能力，不装也能跑主流程）
+    "pycryptodome>=3.20",
+    # 读取 config.yaml
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+# 只有需要自行解密 nt_msg.db 时才要（Py3.13 可能无 wheel，缺失时用内置纯 Python 实现）
+sqlcipher = ["sqlcipher3-binary>=0.5"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+luxun-qq = "luxun_qq.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
