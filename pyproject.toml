@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "luxun-qq"
 version = "0.2.0"
+license = {file = "LICENSE"}
 description = "QQ 自动回复助手：三步思考 + 鲁迅式锐评 + 三候选选择后发送"
 requires-python = ">=3.10"
 dependencies = [
