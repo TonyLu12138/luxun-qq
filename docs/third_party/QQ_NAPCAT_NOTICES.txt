@@ -1,0 +1,26 @@
+Luxun QQ Desktop: bundled QQ / NapCat notices
+
+The Luxun QQ application source code is AI-developed and MIT-licensed.
+That statement does not cover third-party QQ, NapCat, Python or other dependencies.
+The combined executable is NOT entirely MIT-licensed.
+
+NapCat 4.18.28
+Copyright © 2024 Mlikiowa
+Source: https://github.com/NapNeko/NapCatQQ/tree/v4.18.28
+Release: https://github.com/NapNeko/NapCatQQ/releases/tag/v4.18.28
+License source: https://github.com/NapNeko/NapCatQQ/blob/v4.18.28/LICENSE
+License: Limited Redistribution License for NapCat (see NAPCAT_LICENSE.txt).
+Commercial use is prohibited by that license. Upstream runtime files are
+included unmodified; Luxun's launcher and generated local configuration are separate.
+
+QQ 9.9.30.48517 (Windows x64)
+Copyright Tencent. QQ is proprietary software, not covered by Luxun's MIT license.
+Official website: https://im.qq.com/
+Installer mirror: https://github.com/Rodert/qq-versions/releases/tag/qq-windows-x64-9.9.30-20260429
+The pinned installer has a valid Tencent Authenticode signature. Its extracted
+runtime, third-party license notices, and version configuration are preserved.
+Public redistribution and use remain subject to Tencent's applicable terms;
+the Luxun project does not grant rights to Tencent software.
+
+Exact source URLs and SHA256 hashes are in the bundle manifest.json.
+No inference engine or model weights are included in this QQ/NapCat bundle.

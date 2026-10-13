@@ -19,6 +19,11 @@ dependencies = [
 # 只有需要自行解密 nt_msg.db 时才要（Py3.13 可能无 wheel，缺失时用内置纯 Python 实现）
 sqlcipher = ["sqlcipher3-binary>=0.5"]
 dev = ["pytest>=8.0"]
+desktop = ["websocket-client>=1.8,<2"]
+build = ["pyinstaller>=6.11,<7", "websocket-client>=1.8,<2"]
+
+[project.gui-scripts]
+luxun-qq-desktop = "luxun_qq.desktop.app:main"
 
 [project.scripts]
 luxun-qq = "luxun_qq.cli:main"
